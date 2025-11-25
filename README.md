@@ -38,7 +38,7 @@ El objetivo de este proyecto es proporcionar una **guía rápida y accesible** p
 ## Interfaz
 
 <figure>
-  <img src="/images/interfaz.png" alt="Captura de pantalla del login" style="max-width: 600px; display:block; margin:auto;">
+  <img src="/APP/images/interfaz.png" alt="Captura de pantalla del login" style="max-width: 600px; display:block; margin:auto;">
 </figure>
 
 <p align="justify">La interfaz de usuario es sencilla y fácil de navegar, con un diseño limpio que permite a los usuarios encontrar rápidamente los recursos que necesitan. Los botones y enlaces están claramente etiquetados para una mejor experiencia
@@ -48,7 +48,7 @@ El objetivo de este proyecto es proporcionar una **guía rápida y accesible** p
 ## Botón de filtro
 
 <figure>
-  <img src="/images/botonFiltro.png" alt="Captura de pantalla del login" style="max-width: 600px; display:block; margin:auto;">
+  <img src="/APP/images/botonFiltro.png" alt="Captura de pantalla del login" style="max-width: 600px; display:block; margin:auto;">
 </figure>
 
 <p align="justify">El botón de filtro permite a los usuarios seleccionar entre diferentes categorías de recursos, como Base de Datos, APIs, Herramientas de Desarrollo y Hosting y Deployment. Esto ayuda a personalizar la experiencia de navegación y facilita la búsqueda de información relevante.
@@ -58,7 +58,7 @@ El objetivo de este proyecto es proporcionar una **guía rápida y accesible** p
 ## Lista de recursos
 
 <figure>
-  <img src="/images/recursos.png" alt="Captura de pantalla del registro" style="max-width: 600px; display:block; margin:auto;">
+  <img src="/APP/images/recursos.png" alt="Captura de pantalla del registro" style="max-width: 600px; display:block; margin:auto;">
 </figure>
 
 <p align="justify">La lista de recursos está organizada en categorías claras, lo que facilita la búsqueda de información específica sobre Backend y Base de Datos. Cada recurso incluye una breve descripción para ayudar a los usuarios a entender su utilidad.
@@ -68,7 +68,7 @@ El objetivo de este proyecto es proporcionar una **guía rápida y accesible** p
 ## Botones
 
 <figure>
-  <img src="/images/botones.png" alt="Captura de pantalla del registro" style="max-width: 600px; display:block; margin:auto;">
+  <img src="/APP/images/botones.png" alt="Captura de pantalla del registro" style="max-width: 600px; display:block; margin:auto;">
 </figure>
 
 <p align="justify">Los botones están diseñados para ser intuitivos y responsivos, mejorando la interacción del usuario con la página. Al hacer clic en un botón, los usuarios son redirigidos a los recursos correspondientes de manera eficiente o se puede copiar el enlace directamente al portapapeles para su uso posterior.
