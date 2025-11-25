@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Backend & Database Resource Hub</title>
+  <meta name="description" content="Tu colección curada de herramientas, frameworks y servicios para desarrollo backend y bases de datos."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css"/>
+  <!-- link para ver el logo en la pestaña del navegador -->
+  <link rel="icon" href="./pagLogo/logo.png" type="image/png">
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Backend & Database Resource Hub</h1>
+      <p class="subtitle">Tu colección curada de las mejores herramientas, frameworks y servicios para desarrollo backend.</p>
+      <div class="stats">
+        <span class="stat"><span class="count" id="totalCount">0</span> recursos</span>
+        <span class="stat"><span class="count" id="categoryCount">0</span> categorías</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <div class="filters" id="filters"></div>
+      <div class="search">
+        <input id="searchInput" type="search" placeholder="Buscar por nombre, descripción o tags..."/>
+        <div class="chip"><span class="dot apis"></span> APIs y servicios</div>
+        <div class="chip"><span class="dot db"></span> Bases de datos</div>
+        <div class="chip"><span class="dot dev"></span> Herramientas de desarrollo</div>
+        <div class="chip"><span class="dot host"></span> Hosting y deployment</div>
+      </div>
+    </section>
+
+    <section class="grid" id="grid"></section>
+    <div class="empty" id="empty" style="display:none">No hay resultados para tu búsqueda o filtro.</div>
+  </main>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      &copy; 2025 <strong>Backend & Database Resource Hub</strong>. Todos los derechos reservados.
+    </div>
+    <div class="footer-author">
+      Creado por <span class="author-name">Vladimir Ascencio</span>
+    </div>
+    <div class="footer-tip">
+      💡 Tip: Usa los filtros para explorar por categoría y el buscador para refinar resultados.
+    </div>
+  </div>
+</footer>
+
+
+  <script src="./js/script.js"></script>
+
+</body>
+</html>

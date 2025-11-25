@@ -1,0 +1,333 @@
+:root{
+    --bg:#0f1226;
+    --card:#171a34;
+    --muted:#a8b1ff;
+    --text:#eef1ff;
+    --brand:#7c4dff;
+    --brand-2:#00e5ff;
+    --accent:#ff6b6b;
+    --green:#42d392;
+    --yellow:#ffd166;
+    --border:#2a2f5a;
+    --chip-bg:#22264a;
+}
+
+*{
+    box-sizing:border-box
+}
+
+body{
+    margin:0;
+    background: radial-gradient(1200px 600px at 20% -10%, rgba(124,77,255,.25), transparent),
+                radial-gradient(900px 500px at 80% 0%, rgba(0,229,255,.18), transparent),
+                var(--bg);
+    color:var(--text);
+    font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+header{
+    padding:48px 24px 24px;
+    text-align: center;
+}
+
+.container{
+    max-width: 1100px; 
+    margin: 0 auto; 
+    padding: 0 24px
+}
+    
+
+h1{
+    margin:0;
+    font-size:2.2rem;
+    letter-spacing:.2px;
+    background:linear-gradient(90deg, #fff, #a4b0ff);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+    
+.subtitle{
+    margin-top:10px; color:var(--muted);
+}
+    
+.stats{
+    margin-top:14px; 
+    display:flex; gap:12px; 
+    justify-content:center; 
+    flex-wrap:wrap;
+}
+
+.stat{
+    background:linear-gradient(180deg, rgba(124,77,255,.22), rgba(124,77,255,.06));
+    border:1px solid var(--border);
+    padding:8px 14px; 
+    border-radius:999px; 
+    font-weight:600; 
+    color:#e9e9ff;
+}
+    
+.panel{
+    margin:24px auto; 
+    padding:16px; 
+    background:rgba(23,26,52,.7);
+    border:1px solid var(--border); 
+    border-radius:16px; 
+    backdrop-filter: blur(6px);
+}
+
+.filters{
+    display:flex; 
+    gap:8px; 
+    flex-wrap:wrap; 
+    align-items:center;
+}
+
+.filter-btn{
+      border:1px solid var(--border);
+      background:var(--chip-bg);
+      color:#e8ebff; 
+      padding:8px 12px; 
+      border-radius:999px; 
+      cursor:pointer; 
+      font-weight:600;
+      transition:all .15s ease;
+}
+    
+.filter-btn.active{ 
+    background:linear-gradient(90deg, var(--brand), var(--brand-2)); 
+    color:#0b0f24; border-color:transparent
+}
+    
+.search{
+      display:flex; 
+      gap:10px; 
+      margin-top:12px; 
+      flex-wrap:wrap;
+}
+
+.search input{
+    flex:1; min-width:240px;
+      background:#121431; 
+      border:1px solid var(--border); 
+      color:var(--text);
+      padding:10px 12px; 
+      border-radius:12px;
+      outline:none; 
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.02);
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--chip-bg);
+    color: #cfd5ff;
+    font-weight: 600;
+}
+
+.chip .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%
+}
+
+.dot.apis {
+    background: var(--brand)
+}
+
+.dot.db {
+    background: var(--green)
+}
+
+.dot.dev {
+    background: var(--yellow)
+}
+
+.dot.host {
+    background: var(--accent)
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    margin: 20px 0 60px;
+}
+
+.card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, .02), rgba(255, 255, 255, .0));
+    border: 2px solid var(--border);
+    border-radius: 16px;
+    padding: 17px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(400px 120px at 80% -40%, rgba(124, 77, 255, .15), transparent);
+}
+
+.card h3 {
+    margin: 0 0 8px;
+    font-size: 1.1rem
+}
+
+.card p {
+    margin: 0 0 12px;
+    color: #cdd2ff
+}
+
+.badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 12px
+}
+
+.badge {
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: .8rem;
+    font-weight: 700
+}
+
+.badge.apis {
+    background: rgba(124, 77, 255, .18);
+    color: #cfd5ff
+}
+
+.badge.db {
+    background: rgba(66, 211, 146, .18);
+    color: #dff8ec
+}
+
+.badge.dev {
+    background: rgba(255, 209, 102, .18);
+    color: #fff4d6
+}
+
+.badge.host {
+    background: rgba(255, 107, 107, .18);
+    color: #ffe2e2
+}
+
+.actions {
+    display: flex;
+    gap: 10px
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #cce6e9);
+    color: #0b0f24;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn.secondary {
+    background: #101336;
+    color: #e8ebff;
+    border: 1px solid var(--border);
+}
+
+.card {
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 -4px 20px rgba(124, 77, 255, 0.3), 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn,
+.btn.secondary {
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #a0aad7);
+    box-shadow: 0 0 12px rgba(124, 77, 255, 0.4);
+}
+
+.btn.secondary:hover {
+    transform: scale(1.05);
+    background: #0b6fda;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+.footer {
+  background: rgba(23, 26, 52, 0.7);
+  border-top: 1px solid var(--border);
+  padding: 32px 24px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-align: center;
+  backdrop-filter: blur(6px);
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.footer-brand {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.footer-author {
+  font-style: italic;
+  color: var(--muted);
+}
+
+.author-name {
+  font-weight: 700;
+  color: var(--brand);
+}
+
+.footer-tip {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg: #f6f7ff;
+        --text: #0e1630;
+        --muted: #3a4372;
+        --card: #fff;
+        --border: #e5e7f9;
+        --chip-bg: #f0f2ff;
+    }
+
+    .filter-btn.active {
+        color: #0e1630
+    }
+
+    .card {
+        background: #fff
+    }
+
+    body {
+        background: #f6f7ff
+    }
+}
